@@ -2,7 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>LazyLabels</title>
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
+    <script src="https://kit.fontawesome.com/d2754cc67b.js" crossorigin="anonymous"></script>
+    <script script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    $(".rotate").click(function () {
+    $(this).toggleClass("down");
+})
+    </script>
+    <title>TommasosKonst</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,134 +25,398 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="logo">
-          <!-- <a href="/">
-            <img src="images/x-icon/favicon-32x32.png" alt="logo" />
-          </a> -->
-        </div>
         <div class="menu">
-          <!-- <a
-            class="contact_btn"
-            href="https://discord.gg/eCaM9TS7"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="images/x-icon/discord.PNG" alt="Discord" id="headlogo"  />
-          </a> -->
-          <a
-          class="contact_btn"
-            href="https://twitter.com/lazylabelsNFT"
-            target="_blank"
-            rel="noopener noreferrer">
-            <img src="images/x-icon/twitter.PNG" alt="Twitter" id="headlogo" />
-          </a>
-          <!-- <a
-            class="contact_btn"
-            href="https://testnets.opensea.io/login?referrer=%2Faccount"
-            target="_blank"
-            rel="noopener noreferrer">
-            <img src="images/x-icon/opensea.PNG" alt="Opensea" id="headlogo"  />
-          </a> -->
+          
+          <!-- <nav>
+
+            <label for="touch"><img id="drop" src="images/portstuff/menubarswhite.PNG"></label>               
+            <input type="checkbox" id="touch"> 
+          
+            <ul class="slide">
+              <li><a href="#favourites">Art</a></li> 
+              <li><a href="#nft:s">NFT</a></li>
+              <li><a href="#clothing">Clothing</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          
+          </nav>  -->
+          <div class="tom">
+          <h1>TOMMASO PIEHL</h1>
+          </div>
         </div>
-      </div>
+        <div class="linklist">
+        <a class="headlink" href="#favourites" style="text-decoration: none;
+        color: black;">MY ART</a>
+        <p>/</p>
+        <a class="headlink"  href="#nft:s" style="text-decoration: none;
+        color: black;">NFT</a>
+        <p>/</p>
+        <a class="headlink"  href="#clothing" style="text-decoration: none;
+        color: black;">CLOTHING</a>
+        <p>/</p>
+        <a class="headlink"  href="#about" style="text-decoration: none;
+        color: black;">ABOUT</a>
+        </div>
+        <div class="line">
+        </div>
     </header>
 
-    <div class="top"> 
-      <img id="top" src="images/x-icon/top2.png">
-    </div>
-  
-    <section class="comingsoon">
-    <div class="rowitem">
-    <img id="cmnsoon" src="images/x-icon/cmnsoon.PNG">
-    </div>
-    <div class="rowitem">
-    <p>Lazy Labels is a completely art-based project in which we hope to
-          bring innovation and aestetic pleasure to the blockchain. We aim to express ourselves 
-          through the design of cans and bottles, tokens of celebration and coomunity.
-          Follow us on twitter and look out for our discord server to find out more.
-    </p>
-    </div>
-    </div>
+    <section class="top"> 
+    <img id="topbanner" src="images/portstuff/topbanner.PNG">
     </section>
 
-      <div class="community">
-        <div class="link">
-        <a href="https://twitter.com/lazylabelsNFT" target="_blank" rel="noopener noreferrer" class="linkbtn"
-            ><img src="images/x-icon/twittercan.PNG" id="biglink" />
-          </a>
-        </div>
-        <div class="link">
-          <a  target="_blank" rel="noopener noreferrer" class="linkbtn"
-          ><img src="images/x-icon/disccomingsoon.PNG" id="biglink" />
-        </a>
-       </div>
-      </div>
-
-      <div class="lower">
-        <div class="profiles">
-          <img src="images/x-icon/lazyboylogo.PNG" id="cmnsoon" />
-    </div>
-      <div class="profiles">
-      <div class="profilespair">  
-      <div class="T">
-      <a
-      href="https://twitter.com/nftmaso"
-      class="lazyboys">
-      <img src="images/x-icon/tommy.png" alt="Twitter" id="profile" />
+    <!-- <section class="series">
+    <h1>PORTFOLIO</h1>
+    <div class="row">
+    <div class="linkdiv">
+    <img src="images/portstuff/nftlink.PNG" id="nft" />
+    <a
+      class="link"
+      href="#nft:s">
+      <p>NFT</p>
     </a>
-        <h2>Tommaso</h2>
-        <p>Head engineer</p>
-        </div>
-        <div class="T">
-          <a
-          href="https://twitter.com/Felixnftjourney"
-          class="lazyboys">
-          <img src="images/x-icon/felix.png" alt="Twitter" id="profile" />
-        </a>
-        <h2>Felix</h2>
-        <p>Project Manager</p>
-        </div>
-      </div>
-      <div class="profilespair"> 
-        <div class="T">
-          <a
-          href="https://twitter.com/NThjelmer"
-          class="lazyboys">
-          <img src="images/x-icon/hjalle.png" alt="Twitter" id="profile" />
-        </a>
-        <h2>Hjalmar</h2>
-        <p>Marketing advisor</p>
-        </div>
-        <div class="T">
-          <a
-          href="https://twitter.com/NFTLudvig"
-          class="lazyboys">
-          <img src="images/x-icon/ludde.png" alt="Twitter" id="profile" />
-        </a>
-        <h2>Ludvig</h2>
-        <p>Business Advisor</p>
-        </div>
     </div>
+    <div class="linkdiv">
+    <img src="images/Tshirts/swedish.PNG" id="shirtlink" />
+    <a
+      class="link"
+      href="#clothing">
+      <p>Clothing</p>
+    </a>
+  </div>
+  <div class="linkdiv">
+    <img src="images/portstuff/dog.PNG" id="nft" />
+    <a
+      class="link"
+      href="#favourites">
+      <p>My Art</p>
+    </a>
   </div>
   </div>
+    </section> -->
 
-  <div class="lazylogo">
-    <img src="images/x-icon/lazy.png" alt="Twitter" id="lazy" />
-  </div>
+    <nav>
+    <label class="cap" for="touch"><div id="cap">MY ART</div></label>               
+    <input type="checkbox" id="touch"> 
+    <ul class="slide">
+    <section class="display" id="favourites">
+    <!-- <h1>MY ART</h1> -->
+    <div class="row">
+    <img id="feed" src="images/portstuff/bully.PNG">
+    <img id="feed" src="images/portstuff/beach.PNG">
+    <img id="feed" src="images/portstuff/crazyface.PNG">
+    </div>
+    <div class="row">
+    <img id="feed" src="images/portstuff/dog.PNG">
+    <img id="feed" src="images/portstuff/skull.PNG">
+    <img id="feed" src="images/portstuff/bears.PNG">
+    </div>
+    <div class="row">
+      <img id="feed" src="images/portstuff/mafia.PNG">  
+      <img id="feed" src="images/portstuff/scooter.PNG">  
+      <img id="feed" src="images/portstuff/nohead.PNG">  
+    </div>
+    <div class="row">
+    <img id="feed" src="images/portstuff/santa.PNG">
+    <img id="feed" src="images/portstuff/dealer.PNG">
+    <img id="feed" src="images/portstuff/fuckyface.PNG">
+    </div>
+    </section>
+  </ul>
+  </nav>
 
-  <div class="below">
-    <!-- <div class="Y">
-      <img class="first" id="movingtext" src="images/x-icon/drinkresponsibly.png">
-    </div> -->
-    <div class="Z">
-      <img class="first" id="movingmini" src="images/x-icon/minibanner.png">
+
+  <nav>
+    <label class="cap" for="touchB"><div id="cap">NFT</div></label>               
+    <input type="checkbox" id="touchB"> 
+    <ul class="slideB">
+    <section class="lazylabels">
+      <div class="linkrow">
+    <a
+      id="lazylink"
+      class="lazylink"
+      href="https://www.instagram.com/tommasopiehl/?hl=ur"
+      target="_blank"
+      rel="noopener noreferrer">
+    <img src="images/x-icon/lazy.png" id="lazy" />
+    </a>
+    <a
+      class="lazylink"
+      id="lazylinkcan"
+      href="https://www.instagram.com/tommasopiehl/?hl=ur"
+      target="_blank"
+      rel="noopener noreferrer">
+    <img src="images/content/twittercan.PNG" id="lazy" />
+  </a>
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlidesLazy fade" class="lazylink">
+      <img src="images/portstuff/bully.PNG" style="width:100%">
+      <!-- <div class="text">Caption Text</div> -->
+    </div>
+    <div class="mySlidesLazy fade" class="lazylink">
+      <img src="images/portstuff/dog.PNG" style="width:100%">
+      <!-- <div class="text">Caption Two</div> -->
+    </div>
+    <div class="mySlidesLazy fade" class="lazylink">
+      <img src="images/portstuff/beach.PNG" style="width:100%">
+      <!-- <div class="text">Caption Three</div> -->
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlidesLazy(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlidesLazy(1)">&#10095;</a>
+  </div>
+  <br>
+    </div>
+    <div class="row">
+    <p id="lazy">Lazy labels is one of my current and favourite projects, which will hopefully be released in the near future.
+      Its an art-based NFT project in the  which im currently working on with some friends.
+      Our idea revolves around cans and bottles for which I have designed labels and caps. 
+      Our vision is for this project to extend beyond the NFT-space and into the actual design
+      of cans and bottles. Above you can find links to our twitter and the website I have designed for us, Enjoy!
+    </p>
+  </div>
+    </section>
+
+
+      <section class="lego">
+        <div class="row">
+        <img src="images/content/fuegotext.PNG" id="fuegotext" />
+        <div class="slideshow-container-lego">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlidesLego fade">
+            <img src="images/content/tracksuit.PNG" style="width:80%">
+            <!-- <div class="text">Caption Text</div> -->
+          </div>
+          <div class="mySlidesLego fade">
+            <img src="images/content/guard.PNG" style="width:80%">
+            <!-- <div class="text">Caption Two</div> -->
+          </div>
+          <div class="mySlidesLego fade">
+            <img src="images/content/turtle.PNG" style="width:80%"/>
+            <!-- <div class="text">Caption Three</div> -->
+          </div>
+          <!-- Next Band previous buttons -->
+          <a class="prevLego" onclick="plusSlidesLego(-1)">&#10094;</a>
+          <a class="nextLego" onclick="plusSlidesLego(1)">&#10095;</a>
+        </div>
+        <br>
+        </div>
+        <p>FuegoBlocks was our initial idea for the NFT project in which im involved.
+          However, unfamiliar as I am with the NFT-space, we realized the Lego-inspired characters I had designed were
+          way to similar to the original ones created by lego. 
+          In order to avoid legal tribulations the FuegoBlocks were unfortunately never released. 
+          Regardless of this im very happy with the design.
+        </p>
+      </section>
+    </ul>
+  </nav>
+    
+  <nav>
+    <label class="cap" for="touchC"><div id="cap">CLOTHING</div></label>               
+    <input type="checkbox" id="touchC"> 
+    <ul class="slideC">
+      <section class="clothing">
+      <h2>These are some shirts which were part of a project which i
+        posted on everpress. Im currently only designing apparel for 
+        others as I dont find the process of producing and marketing very fun. 
+        Below you can also find some projects for which I have designed the logo, click
+        on them to find out more.
+      </h2>
+      <div class="linkrow">
+      <div class="slideshow-container-shirt">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlidesShirt fade">
+          <img src="images/Tshirts/badpuns.PNG" style="width:100%">
+          <!-- <div class="text">Caption Text</div> -->
+        </div>
+        <div class="mySlidesShirt fade">
+          <img src="images/Tshirts/swedish.PNG" style="width:100%">
+          <!-- <div class="text">Caption Two</div> -->
+        </div>
+        <div class="mySlidesShirt fade">
+          <img src="images/Tshirts/sinner.PNG" style="width:100%"/>
+          <!-- <div class="text">Caption Three</div> -->
+        </div>
+        <div class="mySlidesShirt fade">
+          <img src="images/Tshirts/tms.PNG" style="width:100%"/>
+          <!-- <div class="text">Caption Three</div> -->
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlidesShirt(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlidesShirt(1)">&#10095;</a>
       </div>
-  </div>
+      <br>
+      <a
+      id="clothinglink"
+      class="clothinglink"
+      href="https://www.instagram.com/tommasopiehl/?hl=ur"
+      target="_blank"
+      rel="noopener noreferrer">
+    <img src="images/portstuff/mulligan.PNG" id="lazy" />
+    </a>
+      <a
+      id="turbolink"
+      class="clothinglink"
+      href="https://www.willshop.se/shop/turbobulk"
+      target="_blank"
+      rel="noopener noreferrer">
+    <img src="images/portstuff/turbobulk.PNG" id="lazy" />
+    </a>
+      </div>
+      </section>
+    </ul>
+  </nav>
+
+
+      <nav>
+        <label class="cap" for="touchD"><div id="cap">ABOUT</div></label>               
+        <input type="checkbox" id="touchD"> 
+        <ul class="slideD">
+      <section class="about">
+        <div class="row">
+          <img src="images/portstuff/tommyface.PNG" id="tommyface" />
+        </div>
+          <h2>WHO AM I</h2>
+          <p>I am an independent, completely self-taught graphic designer based in Stockholm, Sweden.
+            My art is highly influenced by cartoon-style illustration but isn't by any means 
+            limited to it's traditional frames. I am on a constant search for ways to express myself through cover-art, NFT:s,
+            websites and anything inbetween. With no education in art but an exellent connoisseur
+            of cartoons I like to think of my self as a man of the people regarding my status as an artist. 
+          </p>
+          <h2>WHAT DO I OFFER</h2>
+            <p>Do you have a good idea for a project which requires a logo or a series of visual components?
+              I am on a constant search for ways to express myself through cover-art, NFT:s,
+              websites and anything inbetween. With no education in art but an exellent connoisseur
+              of cartoons I like to think of my self as a man of the people regarding my status as an artist yooo. 
+            </p>
+          <h2>TALK TO ME!</h2>
+          <div class="row">
+            <div class="aboutlink">
+            <a
+              class="botlink"
+              href="https://www.instagram.com/tommasopiehl/?hl=ur"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img src="images/portstuff/instagramblack.PNG" id="social" />
+            </a>
+            <p>@TommasoPiehl</p>
+            </div>
+            <!-- <div class="aboutlink">
+              <img src="images/portstuff/mailblack.PNG" id="social" />
+              <a
+                class="botlink"
+                href="#favourites">
+                <p>Tommaso.F.Piehl@Gmail.Com</p>
+              </a>
+            </div> -->
+            <div class="tweetlink">
+            <a
+              class="botlink"
+              href="https://twitter.com/nftmaso"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img src="images/portstuff/twitterblack.PNG" id="social" />
+            </a>
+            <p>@NFTMaso</p>
+          </div>
+          </div>
+      </section>
+    </ul>
+  </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/@metamask/onboarding@1.0.1/dist/metamask-onboarding.bundle.js"></script>
     <script src="js/countdown.js"></script>
     <script src="js/app.js"></script>
+    <script>
+    let slideIndexLazy = 1;
+    showSlidesLazy(slideIndexLazy );
+
+    // Next/previous controls
+    function plusSlidesLazy(n) {
+      showSlidesLazy(slideIndexLazy += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlideLazy(n) {
+      showSlidesLazy(slideIndexLazy = n);
+    }
+
+    function showSlidesLazy(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlidesLazy");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndexLazy  = 1}
+    if (n < 1) {slideIndexLazy = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndexLazy -1].style.display = "block";
+    dots[slideIndexLazy -1].className += " active";
+    }</script>
+    <script>
+      let slideIndexLego = 1;
+      showSlidesLego(slideIndexLego);
+  
+      // Next/previous controls
+      function plusSlidesLego(n) {
+        showSlidesLego(slideIndexLego += n);
+      }
+  
+      // Thumbnail image controls
+      function currentSlideLego(n) {
+        showSlidesLego(slideIndexLego = n);
+      }
+  
+      function showSlidesLego(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlidesLego");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndexLego  = 1}
+      if (n < 1) {slideIndexLego = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndexLego -1].style.display = "block";
+      dots[slideIndexLego -1].className += " active";
+      }</script>
+    <script>
+      let slideIndexShirt = 1;
+      showSlidesShirt(slideIndexShirt);
+  
+      // Next/previous controls
+      function plusSlidesShirt(n) {
+        showSlidesShirt(slideIndexShirt += n);
+      }
+  
+      // Thumbnail image controls
+      function currentSlideShirt(n) {
+        showSlidesShirt(slideIndexShirt = n);
+      }
+  
+      function showSlidesShirt(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlidesShirt");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndexShirt  = 1}
+      if (n < 1) {slideIndexShirt = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndexShirt -1].style.display = "block";
+      dots[slideIndexShirt -1].className += " active";
+      }</script>
+
   </body>
 </html>
 
