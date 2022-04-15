@@ -334,6 +334,12 @@ span::after {
   padding-right: 10px;
 }
 
+.menu .tom {
+  width: 100%;
+  display: flex;
+  align-items: left;
+}
+
 .menu .tom h1{
   -webkit-text-stroke: 1px rgb(255, 255, 255);
   color: black;
@@ -341,6 +347,7 @@ span::after {
   font-family: var(--font-primary);
   font-weight: bold;
   font-size: 2rem;
+  margin-left: 2%;
 }
 
 .line{
