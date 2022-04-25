@@ -183,8 +183,9 @@ header .container {
 
 .cap{
   cursor: pointer;
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   font-weight: bolder;
+  font-style: italic;
   font-size: 1.8rem;
   padding: 3%;
   z-index: -1;
@@ -192,8 +193,9 @@ header .container {
 
 .capClothing{
   cursor: pointer;
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   font-weight: bolder;
+  font-style: italic;
   font-size: 1.8rem;
   padding: 3%;
   margin-left:5%;
