@@ -130,12 +130,12 @@ body {
 
 #clothinglink{
   height: 100%;
-  width: 30%;
+  width: 50%;
 }
 
 #turbolink{
   height: 100%;
-  width: 30%;
+  width: 50%;
 }
 
 #lazylinkcan{
@@ -607,7 +607,7 @@ span::after {
   margin-top: -5%;
   padding:4%;
   font-size: 1.2rem;
-  color:white;
+  color:#fff570;
   font-family: var(--font-secondary);
   font-weight: lighter;
   text-align: center;
@@ -638,7 +638,17 @@ margin-bottom: 2%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 100%;
+}
+
+.clothing .clothingcol{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 5%;
 }
 
 .clothinglink {
@@ -755,8 +765,9 @@ margin-bottom: 2%;
 }
 
 .slideshow-container-shirt {
-  width: 30%;
+  width: 90%;
   position: relative;
+  margin-right: -10%;
 }
 
 /* Hide the images by default */
