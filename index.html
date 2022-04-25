@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/d2754cc67b.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript">
-    </script>
     <title>TommasosKonst</title>
     
 
@@ -69,26 +67,33 @@
     <section class="top"> 
     <img id="topbanner" src="images/portstuff/topbanner.PNG">
     </section>
+
+    <div class="X">
     
+    <div class="arrowright">
+      <i class="fa-solid fa-angle-right fa-3x"></i>
+    </div>  
+
     <nav>
     <label class="labelart" for="touch"><div class="cap">MY ART</div></label>
     <input type="checkbox" id="touch">
     <div class="slide">
     <section class="display" id="favourites">
     <div class="displayrow">
-    <img id="feed" src="images/portstuff/bully.PNG">
+    <img id="feed" src="images/portstuff/dog.PNG">
     <img id="feed" src="images/portstuff/beach.PNG">
     <img id="feed" src="images/portstuff/crazyface.PNG">
     </div>
     <div class="displayrow">
-    <img id="feed" src="images/portstuff/dog.PNG">
     <img id="feed" src="images/portstuff/skull.PNG">
+    <img id="feed" src="images/portstuff/bully.PNG">
+    
     <img id="feed" src="images/portstuff/bears.PNG">
     </div>
     <div class="displayrow">
       <img id="feed" src="images/portstuff/mafia.PNG">  
-      <img id="feed" src="images/portstuff/scooter.PNG">  
       <img id="feed" src="images/portstuff/nohead.PNG">  
+      <img id="feed" src="images/portstuff/scooter.PNG">  
     </div>
     <div class="displayrow">
     <img id="feed" src="images/portstuff/santa.PNG">
@@ -99,6 +104,13 @@
   </div>
   </nav>
 
+</div>
+
+<div class="Y">
+    
+  <div class="arrowleftA">
+    <i class="fa-solid fa-angle-left fa-3x"></i>
+  </div>  
 
   <nav>
     <label for="touchB"><div class="cap">NFT</div></label>               
@@ -222,7 +234,13 @@
       </section>
     </ul>
   </nav>
+  
+  <div class="Z">
     
+    <div class="arrowright">
+      <i class="fa-solid fa-angle-right fa-3x"></i>
+    </div> 
+  
   <nav>
     <label class="labelart" for="touchC"><div class="cap">CLOTHING</div></label>               
     <input type="checkbox" id="touchC"> 
@@ -279,6 +297,11 @@
     </ul>
   </nav>
 
+  <div class="W">
+    
+    <div class="arrowleftB">
+      <i class="fa-solid fa-angle-left fa-3x"></i>
+    </div>  
 
       <nav>
         <label for="touchD"><div class="cap" >ABOUT</div></label>               
@@ -433,6 +456,179 @@
       dots[slideIndexShirt -1].className += " active";
       }</script>
 
+<script type="text/javascript">
+let opened = false;
+ $('#touch').bind("click", function() {
+  $(".X").each(function() {
+  var div1 = document.getElementsByClassName("arrowright")[0];
+  var div2 = document.getElementsByClassName("cap")[0];
+  var div3 = document.getElementsByClassName("slide")[0];
+  var rect1 = div1.getBoundingClientRect();
+  var rect2 = div2.getBoundingClientRect();
+  var rect3 = div3.getBoundingClientRect();
+  var windowTop = $(window).scrollTop();
+  var h = rect3.height;
+  var leftPosition = windowTop;
+  $(this)
+    .find(".arrowright")
+    .css({y: rect2.y});
+  if(opened){
+    opened = false;
+    $(this)
+    .find(".arrowright")
+    .css({ transition: "all 0.5s ease"});
+    $(this)
+    .find(".arrowright")
+    .css({  left: 0});
+    $(this)
+    .find(".arrowright")
+    .css({  transform: "rotate(0deg)"});
+  } else {
+    opened = true;
+    $(this)
+    .find(".arrowright")
+    .css({ transition: "all 0.5s ease"});
+    $(this)
+    .find(".arrowright")
+    .css({left: window.innerWidth/2});
+    $(this)
+    .find(".arrowright")
+    .css({ transform: "rotate(90deg)"});
+  }
+  var h = rect3.height;
+  })
+})
+</script>
+<script type="text/javascript">
+let openedB = false;
+  $("#touchB").bind("click", function() {
+   $(".Y").each(function() {
+   var div1 = document.getElementsByClassName("arrowleftA")[0];
+   var div2 = document.getElementsByClassName("cap")[0];
+   var div3 = document.getElementsByClassName("slideB")[0];
+   var rect1 = div1.getBoundingClientRect();
+   var rect2 = div2.getBoundingClientRect();
+   var rect3 = div3.getBoundingClientRect();
+   var windowTop = $(window).scrollTop();
+   var h = rect3.height;
+   var leftPosition = windowTop;
+   $(this)
+     .find(".arrowleftA")
+     .css({y: rect2.y});
+   if(openedB){
+    openedB = false;
+    $(this)
+     .find(".arrowleftA")
+     .css({ transition: "all 0.5s ease"});
+     $(this)
+     .find(".arrowleftA")
+     .css({  right: 0});
+     $(this)
+     .find(".arrowleftA")
+     .css({  transform: "rotate(0deg)"});
+   }
+   else{
+    openedB = true;
+    $(this)
+     .find(".arrowleftA")
+     .css({ transition: "all 0.5s ease"});
+     $(this)
+     .find(".arrowleftA")
+     .css({right: window.innerWidth/2});
+     $(this)
+     .find(".arrowleftA")
+     .css({ transform: "rotate(-90deg)"});
+   }
+   })})
+ </script>
+ <script type="text/javascript">
+  let openedC = false;
+ $('#touchC').bind("click", function() {
+   $(".Z").each(function() {
+   var div1 = document.getElementsByClassName("arrowright")[0];
+   var div2 = document.getElementsByClassName("cap")[0];
+   var div3 = document.getElementsByClassName("slideC")[0];
+   var rect1 = div1.getBoundingClientRect();
+   var rect2 = div2.getBoundingClientRect();
+   var rect3 = div3.getBoundingClientRect();
+   var windowTop = $(window).scrollTop();
+   var h = rect3.height;
+   var leftPosition = windowTop;
+   $(this)
+     .find(".arrowright")
+     .css({y: rect2.y});
+     if(openedC){
+    openedC = false;
+     $(this)
+     .find(".arrowright")
+     .css({ transition: "all 0.5s ease"});
+     $(this)
+     .find(".arrowright")
+     .css({  left: 0});
+     $(this)
+     .find(".arrowright")
+     .css({  transform: "rotate(0deg)"});
+   }
+    else{
+    openedC = true;
+     $(this)
+     .find(".arrowright")
+     .css({ transition: "all 0.5s ease"});
+     $(this)
+     .find(".arrowright")
+     .css({left: window.innerWidth/2});
+     $(this)
+     .find(".arrowright")
+     .css({ transform: "rotate(90deg)"});
+   }
+   
+   var h = rect3.height;
+   })})
+ </script>
+  <script type="text/javascript">
+    let openedD = false;
+ $('#touchD').bind("click", function() {
+     $(".W").each(function() {
+     var div1 = document.getElementsByClassName("arrowleftB")[0];
+     var div2 = document.getElementsByClassName("cap")[0];
+     var div3 = document.getElementsByClassName("slideD")[0];
+     var rect1 = div1.getBoundingClientRect();
+     var rect2 = div2.getBoundingClientRect();
+     var rect3 = div3.getBoundingClientRect();
+     var windowTop = $(window).scrollTop();
+     var h = rect3.height;
+     var leftPosition = windowTop;
+     $(this)
+       .find(".arrowleftB")
+       .css({y: rect2.y});
+    if(openedD){
+    openedD = false;
+       $(this)
+       .find(".arrowleftB")
+       .css({ transition: "all 0.5s ease"});
+       $(this)
+       .find(".arrowleftB")
+       .css({  right: 0});
+       $(this)
+       .find(".arrowleftB")
+       .css({  transform: "rotate(0deg)"});
+     }
+     else{
+      openedD = true;
+       $(this)
+       .find(".arrowleftB")
+       .css({ transition: "all 0.5s ease"});
+       $(this)
+       .find(".arrowleftB")
+       .css({right: window.innerWidth/2});
+       $(this)
+       .find(".arrowleftB")
+       .css({ transform: "rotate(-90deg)"});
+     }
+    
+     var h = rect3.height;
+     })})
+   </script>
   </body>
 </html>
 
